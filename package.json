@@ -5,6 +5,7 @@
   "author": "arontseggai <aron.tseggai@gmail.com>",
   "private": true,
   "scripts": {
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -13,7 +14,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "push-dir": "^0.4.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
